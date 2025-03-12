@@ -6,7 +6,6 @@ def persistence(n):
         digits_list = get_digits(n)
         n = multiply_result(digits_list)
         count += 1
-
     return count
 
 
