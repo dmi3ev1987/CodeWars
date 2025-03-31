@@ -1,8 +1,8 @@
 def digital_root(n):
+    if n < 10:
+        return n
     str_number = str(n)
     result = 0
-    if len(str_number) == 1:
-        return n
     while len(str_number) != 1:
         if result != 0:
             result = 0
