@@ -1,6 +1,5 @@
 def narcissistic(value):
-    result = 0
-    lenght_value = len(str(value))
-    for item in str(value):
-        result += (int(item)**lenght_value)
-    return result == value
+    str_value = str(value)
+    length = len(str_value)
+    return sum(int(item) ** length for item in str_value) == value
+​
