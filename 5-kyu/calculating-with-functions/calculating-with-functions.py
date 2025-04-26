@@ -1,9 +1,5 @@
 ​
 ​
-def seven(calculation=None):
-    return get_number_or_function(calculation, 7)
-​
-​
 def eight(calculation=None):
     return get_number_or_function(calculation, 8)
 ​
@@ -25,4 +21,4 @@ def times(number):
 ​
 ​
 def divided_by(number):
-    return lambda x: int(x / number)
+    return lambda x: x // number
