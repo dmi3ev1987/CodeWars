@@ -1,9 +1,7 @@
 def cakes(recipe, available):
-    result = []
-    for key in recipe.keys():
-        if key not in available.keys():
-            return 0
-        result.append(
-            available[key] // recipe [key] 
-        )
+    result = [
+        available[key] // recipe[key] if key in available.keys() else 0
+        for key in recipe.keys()
+    ]
     return min(result)
+​
