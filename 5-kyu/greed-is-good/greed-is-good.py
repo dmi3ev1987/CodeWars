@@ -1,35 +1,29 @@
-SCORE_DICT = {
-    1:
-        {
-            1: 100,
-            5: 50,
-        },
-    3:
-        {
-            1: 1000,
-            6: 600,
-            5: 500,
-            4: 400,
-            3: 300,
-            2: 200,
-        }
+from collections import Counter
+​
+SCORE_RULES = {
+    1: {1: 100, 5: 50},
+    3: {
+        1: 1000,
+        2: 200,
+        3: 300,
+        4: 400,
+        5: 500,
+        6: 600,
+    },
 }
+​
+​
 def score(dice):
-    score = 0
-    dice_set = set(dice)
-    dice_dict = {}
-    for number in dice_set:
-        dice_dict[number] = dice.count(number)
-    for key, value in dice_dict.items():
-        triple = 0
-        ones = value
-        if value >= 3:
-            triple = value // 3
-            ones = value % 3
-        if key in SCORE_DICT[1]:
-            result = SCORE_DICT[1][key]
-            score += result  * ones
-        if key in SCORE_DICT[3]:
-            result = SCORE_DICT[3][key]
-            score += result  * triple
-    return score
+    total_score = 0
+    counts = Counter(dice)
+​
+    for die_value, count in counts.items():
+        triples = count // 3
+        singles = count % 3
+​
+        if die_value in SCORE_RULES[1]:
+            total_score += SCORE_RULES[1][die_value] * singles
+        if die_value in SCORE_RULES[3]:
+            total_score += SCORE_RULES[3][die_value] * triples
+    return total_score
+​
