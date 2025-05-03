@@ -1,7 +1,7 @@
 def zeros(n):
-    count = 0
+    count_zeros = 0
     k = 5
     while n // k > 0:
-        count += n // k
+        count_zeros += n // k
         k *= 5
-    return count
+    return count_zeros
