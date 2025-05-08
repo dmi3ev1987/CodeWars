@@ -4,4 +4,3 @@ def cakes(recipe, available):
         for key in recipe
     ]
     return min(result)
-​
