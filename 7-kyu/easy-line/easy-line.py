@@ -18,12 +18,12 @@ def easyline(n):
                 new_list.append(first + second)
             new_list.append(one)
             old_list = new_list
-    result = calculate_result(new_list)
-    return result
-
-
+    return calculate_result(new_list)
+​
+​
 def calculate_result(list):
     result = 0
     for item in list:
         result += item**2
     return result
+​
