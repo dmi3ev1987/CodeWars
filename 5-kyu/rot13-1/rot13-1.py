@@ -4,11 +4,11 @@ def rot13(message):
     for letter in message:
         if 'a' <= letter <= 'z':
             result.append(
-                chr(get_shifted_ord_number(ord('a'), ord(letter), shift))
+                chr(get_shifted_ord_number(ord('a'), ord(letter), shift)),
             )
         elif 'A' <= letter <= 'Z':
             result.append(
-                chr(get_shifted_ord_number(ord('A'), ord(letter), shift))
+                chr(get_shifted_ord_number(ord('A'), ord(letter), shift)),
             )
         else:
             result.append(letter)
