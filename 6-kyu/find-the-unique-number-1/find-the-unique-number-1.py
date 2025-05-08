@@ -5,3 +5,5 @@ def find_uniq(arr):
     for number in arr:
         if number != common_number:
             return number
+    return common_number
+​
