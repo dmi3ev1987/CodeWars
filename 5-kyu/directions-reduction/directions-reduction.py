@@ -15,4 +15,3 @@ def dir_reduc(arr):
         else:
             index += 1
     return arr
-​

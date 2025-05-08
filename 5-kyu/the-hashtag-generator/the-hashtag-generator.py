@@ -6,4 +6,3 @@ def generate_hashtag(s):
     if len(hashtag) > 140:
         return False
     return hashtag
-​

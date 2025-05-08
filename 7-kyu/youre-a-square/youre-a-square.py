@@ -12,4 +12,3 @@ def is_square(n):
         else:
             count += 1
     return False
-​

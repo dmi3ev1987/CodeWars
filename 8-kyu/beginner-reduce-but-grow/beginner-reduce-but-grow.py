@@ -3,4 +3,3 @@ def grow(arr):
     for num in arr:
         result *= num
     return result
-​

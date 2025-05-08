@@ -5,4 +5,3 @@ def is_valid_walk(walk):
         walk.count('n') == walk.count('s')
         and walk.count('w') == walk.count('e')
     )
-​

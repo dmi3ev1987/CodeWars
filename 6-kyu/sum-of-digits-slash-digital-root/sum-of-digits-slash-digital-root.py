@@ -7,4 +7,3 @@ def digital_root(n):
     if len(str(result)) > 1:
         result = digital_root(result)
     return result
-​

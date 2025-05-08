@@ -4,4 +4,3 @@ def disemvowel(string_):
         ''.join(letter for letter in word if letter.lower() not in vowels)
         for word in string_.split(' ')
     )
-​

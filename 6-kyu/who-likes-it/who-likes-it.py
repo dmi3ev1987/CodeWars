@@ -11,4 +11,3 @@ def likes(names):
         return f"{names[0]}, {names[1]} and {names[2]} {text}"
     else:
         return f"{names[0]}, {names[1]} and {len(names) - 2} others {text}"
-​

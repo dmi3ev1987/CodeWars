@@ -10,4 +10,3 @@ def solve(s):
             if count > max_lenght:
                 max_lenght = count
     return max_lenght
-​

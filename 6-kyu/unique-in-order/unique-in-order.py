@@ -4,4 +4,3 @@ def unique_in_order(sequence):
         if not result_list or item != result_list[-1]:
             result_list.append(item)
     return result_list
-​

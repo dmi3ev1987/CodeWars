@@ -8,8 +8,8 @@ def series_sum(n):
     else:
         result = n
     return r"{:.2f}".format(result)
-​
-​
+
+
 def calc(list):
     result = 0
     for item in list:

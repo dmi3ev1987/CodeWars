@@ -13,8 +13,7 @@ def rot13(message):
         else:
             result.append(letter)
     return ''.join(result)
-​
-​
+
+
 def get_shifted_ord_number(ord_start, ord_letter, shift):
     return ord_start + ((ord_letter - ord_start + shift) % 26)
-​

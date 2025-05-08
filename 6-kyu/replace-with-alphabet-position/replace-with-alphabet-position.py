@@ -26,8 +26,8 @@ LETTER_POSITIONS = {
     "Y": 25,
     "Z": 26,
 }
-​
-​
+
+
 def alphabet_position(text):
     result = [
         str(LETTER_POSITIONS[letter.upper()])
@@ -35,4 +35,3 @@ def alphabet_position(text):
         if letter.upper() in LETTER_POSITIONS
     ]
     return " ".join(result)
-​

@@ -5,8 +5,8 @@ def count_bits(n):
         if bit == "1":
             count += 1
     return count
-​
-​
+
+
 def to_binary(n):
     if n == 0:
         return "0"
@@ -15,4 +15,3 @@ def to_binary(n):
         binary += str(n % 2)
         n = n // 2
     return binary[::-1]
-​

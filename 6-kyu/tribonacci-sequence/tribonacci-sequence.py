@@ -7,4 +7,3 @@ def tribonacci(signature, n):
             signature[index] + signature[index + 1] + signature[index + 2]
         )
     return signature
-​

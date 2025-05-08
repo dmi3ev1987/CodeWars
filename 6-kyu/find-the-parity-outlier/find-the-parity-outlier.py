@@ -9,4 +9,3 @@ def find_outlier(integers):
     if len(even_list) == 1:
         return even_list[0]
     return odd_list[0]
-​
