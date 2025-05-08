@@ -1,6 +1,7 @@
-def format_duration(seconds) -> str:
+def format_duration(seconds):
     if seconds == 0:
         return 'now'
+
     duration = get_duration_dict(seconds)
 
     result = [
@@ -16,7 +17,7 @@ def format_duration(seconds) -> str:
     )
 
 
-def get_duration_dict(seconds) -> dict:
+def get_duration_dict(seconds):
     coefficient = 60 * 60 * 24 * 365
     years = seconds // coefficient
 
@@ -29,3 +30,15 @@ def get_duration_dict(seconds) -> dict:
     hours = seconds // coefficient
 
     seconds = seconds % coefficient
+    coefficient = 60
+    minutes = seconds // coefficient
+
+    seconds = seconds % coefficient
+
+    return {
+        'years': years,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds,
+    }
