@@ -6,4 +6,3 @@ def find_uniq(arr):
         if number != common_number:
             return number
     return common_number
-​
