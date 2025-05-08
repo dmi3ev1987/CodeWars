@@ -1,3 +1,24 @@
+def format_duration(seconds):
+    if seconds == 0:
+        return 'now'
+​
+    coefficient = 60 * 60 * 24 * 365
+    years = seconds // coefficient
+​
+    seconds = seconds % coefficient
+    coefficient = 60 * 60 * 24
+    days = seconds // coefficient
+​
+    seconds = seconds % coefficient
+    coefficient = 60 * 60
+    hours = seconds // coefficient
+​
+    seconds = seconds % coefficient
+    coefficient = 60
+    minutes = seconds // coefficient
+​
+    seconds = seconds % coefficient
+​
     duration = {
         'years': years,
         'days': days,
@@ -5,16 +26,12 @@
         'minutes': minutes,
         'seconds': seconds,
     }
-    result = []
-    for item in duration:
-        if duration[item] == 0:
-            continue
-        if duration[item] == 1:
-            text_item = item[:-1]
-        else:
-            text_item = item
-        text = f'{duration[item]} {text_item}'
-        result.append(text)
+​
+    result = [
+        f'{duration[item]} {item[:-1] if duration[item] == 1 else item}'
+        for item in duration
+        if duration[item] != 0
+    ]
 ​
     return (
         ', '.join(result[:-1]) + ' and ' + result[-1]
