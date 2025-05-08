@@ -14,6 +14,8 @@ ignore = [
     "D100",
     "D101",
     "D102",
+    # Missing docstring in public functionRuffD103
+    "D103",
     "D105",
     "D106",
     "D107",
@@ -42,4 +44,7 @@ ignore = [
     "PTH123",
     # `datetime.datetime.now()` called without a `tz` argumentRuff
     "DTZ005",
+    # Magic value used in comparison, consider replacing `3` with a constant variableRuffPLR2004
+    "PLR2004",
+    "INP001",
 ]
