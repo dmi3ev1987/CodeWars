@@ -7,6 +7,6 @@ def solve(s):
             count = 0
         else:
             count += 1
-            if count > max_lenght:
-                max_lenght = count
+            max_lenght = max(max_lenght, count)
     return max_lenght
+​
