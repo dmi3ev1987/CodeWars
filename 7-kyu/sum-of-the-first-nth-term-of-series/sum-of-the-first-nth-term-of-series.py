@@ -8,11 +8,10 @@ def series_sum(n):
     else:
         result = n
     return f'{result:.2f}'
-​
-​
+
+
 def calc(list):
     result = 0
     for item in list:
         result += 1 / item
     return round(result, 2)
-​
