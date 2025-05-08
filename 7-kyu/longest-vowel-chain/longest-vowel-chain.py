@@ -9,4 +9,3 @@ def solve(s):
             count += 1
             max_lenght = max(max_lenght, count)
     return max_lenght
-​
