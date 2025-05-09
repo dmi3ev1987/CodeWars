@@ -1,5 +1,5 @@
 def solve(s):
-    vowels = {"a", "e", "i", "o", "u"}
+    vowels = {'a', 'e', 'i', 'o', 'u'}
     count = 0
     max_lenght = 0
     for letter in s:
