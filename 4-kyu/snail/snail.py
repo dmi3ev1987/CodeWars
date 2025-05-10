@@ -13,4 +13,5 @@ def snail(snail_map):
         if snail_map and snail_map[0]:
             for row in snail_map[::-1]:
                 result.append(row.pop(0))
+
     return result
