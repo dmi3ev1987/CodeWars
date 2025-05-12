@@ -1,4 +1,2 @@
-def descending_order(numbers):
-    numbers_list = list(str(numbers))
-    return int(''.join(reversed(sorted(numbers_list))))
-​
+def descending_order(number):
+    return int(''.join(sorted(str(number), reverse=True)))
