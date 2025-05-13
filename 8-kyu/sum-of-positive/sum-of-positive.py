@@ -1,7 +1,3 @@
-def positive_sum(numbers):
-    result = 0
-    for number in numbers:
-        if number > 0:
-            result += number
-    return result
+def positive_sum(arr):
+    return sum(number for number in arr if number > 0)
 ​
