@@ -4,3 +4,4 @@ def get_middle(string):
     if lenght % 2:
         return string[middle_index]
     return string[middle_index - 1 : middle_index + 1]
+​
