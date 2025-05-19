@@ -19,4 +19,5 @@ def solution(array):
                         break
                     result.append(str(number_to_append))
                     break
+
     return ','.join(result)
