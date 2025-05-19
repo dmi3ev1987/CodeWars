@@ -11,4 +11,5 @@ def solution(array):
                 result.append(str(start) + '-' + str(next))
             start = number
         next = number
+
     return ','.join(result)
