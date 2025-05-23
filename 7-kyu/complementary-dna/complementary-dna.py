@@ -1,10 +1,8 @@
-def DNA_strand(dna):
-    DNA = {
+def dna_strand(dna):
+    dna_units = {
         'A': 'T',
         'T': 'A',
         'C': 'G',
         'G': 'C',
     }
-    return ''.join(
-        DNA[unit] for unit in dna
-    )
+    return ''.join(dna_units[unit] for unit in dna)
