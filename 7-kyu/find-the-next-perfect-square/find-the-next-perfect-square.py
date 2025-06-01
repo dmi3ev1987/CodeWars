@@ -1,2 +1,5 @@
 def find_next_square(square):
-    return int((square**0.5 + 1) ** 2) if (square**0.5).is_integer() else -1
+    root = square ** 0.5
+    if root.is_integer():
+        return (root + 1) ** 2
+    return -1
