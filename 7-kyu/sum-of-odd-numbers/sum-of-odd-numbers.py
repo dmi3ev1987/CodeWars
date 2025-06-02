@@ -1,11 +1,7 @@
 def row_sum_odd_numbers(n):
-    current_odd = 1
-    result = []
-    for index in range(1, n + 1):
-        item = []
-        for odd_number in range(index):
-            item.append(current_odd)
-            current_odd += 2
-        result.append(item)
-
-    return sum(result[-1])
+    # The first number in the nth row is n² - n + 1
+    first_number = n * n - n + 1
+    # The last number in the nth row is n² + n - 1
+    last_number = n * n + n - 1
+    # Sum of consecutive odd numbers from a to b is ((b - a) // 2 + 1) * (a + b) // 2
+    return ((last_number - first_number) // 2 + 1) * (first_number + last_number) // 2
