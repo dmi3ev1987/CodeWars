@@ -7,5 +7,5 @@ def row_sum_odd_numbers(n):
             item.append(current_odd)
             current_odd += 2
         result.append(item)
-​
+
     return sum(result[-1])
