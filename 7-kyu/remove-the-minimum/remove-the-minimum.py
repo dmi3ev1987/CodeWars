@@ -1,5 +1,5 @@
 def remove_smallest(input_numbers):
-    result = input_numbers[:]
-    if result:
-        result.remove(min(result))
-    return result
+    if len(input_numbers) < 1:
+        return input_numbers
+    index = input_numbers.index(min(input_numbers))
+    return input_numbers[:index] + input_numbers[index+1:]
