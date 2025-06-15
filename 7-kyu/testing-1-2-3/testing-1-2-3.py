@@ -1,7 +1,2 @@
 def number(lines):
-    count = 1
-    result = []
-    for line in lines:
-        result.append(f'{count}: {line}')
-        count += 1
-    return result
+    return [f'{count}: {line}' for count, line in enumerate(lines, start=1)]
