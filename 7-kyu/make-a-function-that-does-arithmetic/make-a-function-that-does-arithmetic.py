@@ -1,6 +1,6 @@
 import operator
-​
-​
+
+
 def arithmetic(a, b, input_operator):
     operators = {
         'add': operator.add,
