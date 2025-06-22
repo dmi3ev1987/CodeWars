@@ -6,4 +6,6 @@ def comp(array, square_array):
         return False
     if not array and not square_array:
         return True
-    return Counter(number * number for number in array) == Counter(square_array)
+    return Counter(number * number for number in array) == Counter(
+        square_array
+    )
