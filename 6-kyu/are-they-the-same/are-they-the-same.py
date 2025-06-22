@@ -7,5 +7,5 @@ def comp(array, square_array):
         if number * number not in square_array:
             return False
         else:
-            square_array.pop(square_array.index(number*number))
+            square_array.pop(square_array.index(number * number))
     return True
