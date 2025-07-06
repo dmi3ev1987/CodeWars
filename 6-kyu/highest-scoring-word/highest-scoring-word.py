@@ -1,6 +1,5 @@
 def high(input_string):
-    score = [
-        sum(ord(letter.lower()) - ord('a') + 1 for letter in word)
-        for word in input_string.split()
-    ]
-    return input_string.split()[score.index(max(score))]
+    return max(
+        input_string.split(),
+        key=lambda word: sum(ord(letter) - 96 for letter in word),
+    )
