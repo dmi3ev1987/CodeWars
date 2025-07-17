@@ -1,14 +1,18 @@
-def longest_consec(strarr, k):
-    if not strarr or k <= 0 or k > len(strarr):
+def longest_consec(strings_array, consec_number):
+    if (
+        not strings_array
+        or consec_number <= 0
+        or consec_number > len(strings_array)
+    ):
         return ''
-
+​
     max_length = 0
     result = ''
-
-    for i in range(len(strarr) - k + 1):
-        current = ''.join(strarr[i : i + k])
-        if len(current) > max_length:
-            max_length = len(current)
-            result = current
-
+​
+    for i in range(len(strings_array) - consec_number + 1):
+        current_string = ''.join(strings_array[i : i + consec_number])
+        if len(current_string) > max_length:
+            max_length = len(current_string)
+            result = current_string
+​
     return result
