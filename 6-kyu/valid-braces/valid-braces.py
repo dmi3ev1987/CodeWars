@@ -3,8 +3,8 @@ BRACES = {
     '[': ']',
     '(': ')',
 }
-​
-​
+
+
 def valid_braces(string):
     stack = []
     for brace in string:
