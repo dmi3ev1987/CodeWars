@@ -3,8 +3,8 @@ BRACES = {
     '[': ']',
     '(': ')',
 }
-​
-​
+
+
 def valid_braces(string):
     index = 0
     while len(string) >= 2:
