@@ -15,7 +15,7 @@ def solution(number):
         1: 'I',
     }
     result = ''
-​
+
     for key in sorted(symbols.keys(), reverse=True):
         while number >= key:
             result += symbols[key]
