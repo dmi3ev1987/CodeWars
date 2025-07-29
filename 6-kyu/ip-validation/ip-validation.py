@@ -4,7 +4,7 @@ def is_valid_IP(input_string):
             sum(
                 0 <= int(number) <= 255 and str(int(number)) == number
                 for number in input_string.split('.')
-                if number and all(digit.isdigit() for digit in number)
+                if number and number.isdigit()
             )
             == 4
         )
