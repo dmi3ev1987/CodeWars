@@ -8,5 +8,5 @@ def sq_in_rect(length, width):
             width, length = length, width
         result.append(width)
         length -= width
-        squere_left -= width ** 2
+        squere_left -= width**2
     return result
