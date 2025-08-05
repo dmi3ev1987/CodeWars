@@ -1,6 +1,6 @@
 from collections import defaultdict
-​
-​
+
+
 def stock_list(stocklist, categories):
     if not stocklist or not categories:
         return ''
