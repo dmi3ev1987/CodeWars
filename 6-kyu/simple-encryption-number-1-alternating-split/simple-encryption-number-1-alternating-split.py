@@ -10,7 +10,7 @@ def decrypt(encrypted_text, n):
         text.append(even_part[index])
     if len(odd_part) > half:
         text.append(odd_part[-1])
-    text = ''.join(text[:len(encrypted_text)])
+    text = ''.join(text)
     return decrypt(text, n - 1)
 ​
 ​
