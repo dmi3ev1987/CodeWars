@@ -12,8 +12,8 @@ def decrypt(encrypted_text, n):
         text.append(odd_part[-1])
     text = ''.join(text)
     return decrypt(text, n - 1)
-​
-​
+
+
 def encrypt(text, n):
     if n <= 0 or not text:
         return text
