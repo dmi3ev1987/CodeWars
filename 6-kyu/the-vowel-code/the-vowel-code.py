@@ -10,15 +10,14 @@ PATTERN = {
     '4': 'o',
     '5': 'u',
 }
-​
+
+
 def encode(input_string):
     return ''.join(
-        PATTERN[letter]
-        if letter in PATTERN
-        else letter
+        PATTERN[letter] if letter in PATTERN else letter
         for letter in input_string
     )
-    
-    
+
+
 def decode(input_string):
     return encode(input_string)
