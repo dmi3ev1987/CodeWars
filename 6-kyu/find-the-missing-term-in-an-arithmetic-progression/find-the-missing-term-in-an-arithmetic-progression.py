@@ -1,7 +1,5 @@
 def find_missing(sequence):
-    constant_difference = min(
-        sequence[1] - sequence[0], sequence[-1] - sequence[-2]
-    )
+    constant_difference = (sequence[-1] - sequence[0]) / len(sequence)
     missing_term = sequence[0]
     for number in sequence:
         if missing_term != number:
