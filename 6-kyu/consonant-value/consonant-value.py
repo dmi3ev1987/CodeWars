@@ -1,14 +1,13 @@
+import re
+​
+​
 def solve(input_string):
-    chunks = []
-    chunk = ''
-    exception_letters = 'aeiou'
-    for letter in input_string:
-        if letter not in exception_letters:
-            chunk += letter
-        else:
-            chunks.append(chunk)
-            chunk = ''
-    chunks.append(chunk)
+    """Split each individual vowel (a, e, i, o, u).
+​
+    Square brackets [] in `re.split` make it a character class.
+    Example: re.split('[aeiou]', 'hello world') splits at 'e' and 'o'.
+    """
     return max(
-        sum(ord(letter) - ord('a') + 1 for letter in chunk) for chunk in chunks
+        sum(ord(letter) - ord('a') + 1 for letter in chunk)
+        for chunk in re.split('[aeiou]', input_string)
     )
