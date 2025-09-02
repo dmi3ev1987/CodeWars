@@ -1,7 +1,6 @@
 def get_length_of_missing_array(array_of_arrays):
     lengths = [
-        len(array) if array is not None else 0
-        for array in array_of_arrays
+        len(array) if array is not None else 0 for array in array_of_arrays
     ]
     lengths.sort()
     if not lengths or 0 in lengths:
