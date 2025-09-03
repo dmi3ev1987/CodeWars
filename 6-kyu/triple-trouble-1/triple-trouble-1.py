@@ -7,7 +7,7 @@ def triple_double(num1, num2):
         else:
             current_char_1 = char_1
             triple_count = 1
-​
+
         if triple_count >= 3:
             for index in range(len(str(num2)) - 1):
                 if str(num2)[index] == str(num2)[index + 1] == current_char_1:
