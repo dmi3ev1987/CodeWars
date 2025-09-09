@@ -1,6 +1,6 @@
 from collections import Counter
-​
-​
+
+
 def number_of_pairs(gloves):
     glove_counter = Counter(gloves)
     result = 0
