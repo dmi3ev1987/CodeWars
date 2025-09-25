@@ -1,5 +1,7 @@
 def up_array(input_array):
-    if not input_array or any(number > 9 or number < 0 for number in input_array):
+    if not input_array or any(
+        number > 9 or number < 0 for number in input_array
+    ):
         return None
     result = []
     value_to_add = 1
