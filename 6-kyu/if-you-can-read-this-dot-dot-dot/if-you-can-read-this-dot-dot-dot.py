@@ -1,10 +1,12 @@
-from preloaded import NATO  # NATO['A'] == 'Alfa', etc
-
-
 def to_nato(words: str) -> str:
+    nato_string = (
+        'Alfa Bravo Charlie Delta Echo Foxtrot Golf Hotel India '
+        'Juliett Kilo Lima Mike November Oscar Papa Quebec Romeo '
+        'Sierra Tango Uniform Victor Whiskey Xray Yankee Zulu'
+    )
+    nato_dict = {nato_word[0]: nato_word for nato_word in nato_string.split()}
     return ' '.join(
-        NATO[letter.upper()]
-        if letter.isalpha()
-        else ('' if letter == ' ' else letter)
-        for letter in words.strip()
-    ).replace('  ', ' ')
+        nato_dict.get(char, char)
+        for char in words.upper()
+        if not char.isspace()
+    )
