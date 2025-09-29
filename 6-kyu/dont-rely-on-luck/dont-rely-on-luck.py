@@ -1,10 +1,9 @@
 import random
-
-random.randint = lambda a, b: 10
-
-
-def get_guess(n):
-    return n
-
-
-guess = get_guess(10)
+​
+​
+def get_guess(input_number):
+    random.randint = lambda a, b: input_number
+    return input_number
+​
+​
+guess = get_guess(55)
