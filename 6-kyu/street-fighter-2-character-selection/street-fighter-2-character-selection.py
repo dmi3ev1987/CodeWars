@@ -2,7 +2,7 @@ def street_fighter_selection(fighters, initial_position, moves):
     opts = ['up', 'down', 'right', 'left']
     level, position = initial_position
     result = []
-​
+
     for move in moves:
         if move == opts[0]:
             level = 0
