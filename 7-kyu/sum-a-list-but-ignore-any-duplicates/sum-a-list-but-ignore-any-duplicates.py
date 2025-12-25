@@ -1,6 +1,6 @@
 from collections import Counter
-​
-​
+
+
 def sum_no_duplicates(input_list):
     result = 0
     number_counts = Counter(input_list)
