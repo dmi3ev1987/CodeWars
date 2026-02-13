@@ -1,10 +1,8 @@
 def sum_nested(input_list):
     total = 0
-    while input_list:
-        value = input_list.pop()
-        if isinstance(value, int):
-            total += value
+    for value in input_list:
+        if type(value) == list:
+            total += sum_nested(value)
         else:
-            for part in value:
-                input_list.append(part)
+            total += value
     return total
