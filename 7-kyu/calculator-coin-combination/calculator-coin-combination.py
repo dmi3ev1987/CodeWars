@@ -11,5 +11,5 @@ def coin_combo(cents):
         result[1] += 1
     while cents >= 1:
         cents -= 1
-        result[0] += 1       
+        result[0] += 1
     return result
