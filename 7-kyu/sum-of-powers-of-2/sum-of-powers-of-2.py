@@ -3,7 +3,7 @@ def powers(input_number):
     power = 1
     result = []
     while power_of_two[-1] < input_number:
-        power_of_two.append(2 ** power)
+        power_of_two.append(2**power)
         power += 1
     while input_number > 0:
         number = power_of_two.pop()
