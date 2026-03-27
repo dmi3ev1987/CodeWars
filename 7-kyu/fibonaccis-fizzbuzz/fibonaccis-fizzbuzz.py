@@ -11,4 +11,3 @@ def fibs_fizz_buzz(n):
         elif result[-1] % 5 == 0:
             result[-1] = 'Buzz'
     return result[:n]
-​
