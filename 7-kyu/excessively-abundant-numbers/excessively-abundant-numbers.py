@@ -3,4 +3,4 @@ def abundant_number(num):
     for current_num in range(1, num):
         if num % current_num == 0:
             devisors.append(current_num)
-    return True if sum(devisors) > num else False
+    return sum(devisors) > num
