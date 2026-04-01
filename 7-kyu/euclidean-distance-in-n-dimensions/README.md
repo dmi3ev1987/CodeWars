@@ -1,0 +1,1 @@
+<h2><a href=https://www.codewars.com/kata/595877be60d17855980013d3/train/python target="_blank">Euclidean distance in n dimensions</a></h2><h3>7 kyu</h3><p>Implement a function to calculate the distance between two points in n-dimensional space. The two points will be passed to your function as arrays of the same length.</p><p>Round your answers to two decimal places.</p>
