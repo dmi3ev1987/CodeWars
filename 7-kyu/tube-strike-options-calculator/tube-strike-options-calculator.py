@@ -9,4 +9,3 @@ def calculator(distance, bus_drive, bus_walk):
         return 'Walk'
     else:
         return 'Bus'
-​
